@@ -1,0 +1,13 @@
+{
+  "transform": {
+    ".*": "<rootDir>/test/jest-preprocessor.js"
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js", "json", "svg", "png", "gif"],
+  "setupTestFrameworkScriptFile": "<rootDir>/test/jest-setup.js",
+  "testEnvironment": "node",
+  "testRegex": "(/__tests__/.*|\\.tests?)\\.(ts|tsx)$",
+  "roots": ["<rootDir>/src"],
+  "testResultsProcessor": "jest-teamcity-reporter",
+  "coverageDirectory": "<rootDir>/build/coverage/",
+  "coverageReporters": ["text-summary", "teamcity", "html", "json"]
+}
