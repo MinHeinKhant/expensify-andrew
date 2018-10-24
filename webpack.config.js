@@ -1,10 +1,8 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = env => {
   const isProduction = env === 'production';
-  const devMode = process.env.NODE_ENV !== 'production';
 
   return {
     entry: './src/app.js',
@@ -38,20 +36,10 @@ module.exports = env => {
               }
             ]
           })
-          // use: [
-          //   devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          //   'css-loader',
-          //   'sass-loader'
-          // ]
         }
       ]
     },
     plugins: [new ExtractTextPlugin('style.css')],
-    // plugins: [
-    //   new MiniCssExtractPlugin({
-    //     filename: 'style.css'
-    //   })
-    // ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.join(__dirname, '/public/', 'dist'),

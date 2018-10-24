@@ -25,6 +25,7 @@
     "css-loader": "^1.0.0",
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "firebase": "^5.5.5",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0",
@@ -37,10 +38,11 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "uuid": "^3.3.2",
-    "webpack": "^4.16.5",
+    "webpack": "^4.4.1",
     "webpack-cli": "^3.1.0"
   },
   "devDependencies": {
@@ -51,7 +53,7 @@
     "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.4.4",
     "react-test-renderer": "^16.5.2",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.9"
   },
   "repository": {
     "type": "git",
