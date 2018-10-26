@@ -13,8 +13,8 @@ export const PrivateRoute = ({
     render={props =>
       isAuthenticated ? (
         <div>
-          {' '}
-          <Header /> <Component {...props} />{' '}
+          <Header />
+          <Component {...props} />
         </div>
       ) : (
         <Redirect to="/" />
