@@ -12,6 +12,7 @@ import AppRouter, { history } from './routers/AppRouter';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 import { firebase } from './firebase/firebase';
+import LoadingPage from './components/LoadingPage';
 
 // import '../playground/promises';
 
@@ -33,7 +34,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>loading..</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
